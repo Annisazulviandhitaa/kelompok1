@@ -1,0 +1,179 @@
+/* Reset dan dasar */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e8f0fe;
+  display: flex;
+  flex-direction: column;
+  color: #1a237e;
+}
+
+/* Header */
+header {
+  background-color: #1565c0;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(21, 101, 192, 0.4);
+}
+
+header h1 {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 1rem;
+  margin: 0.2rem 0 0 0;
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* Navigasi */
+nav {
+  background-color: #1e88e5;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  flex-shrink: 0;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 5px rgba(30, 136, 229, 0.4);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #0d47a1;
+  transform: scale(1.05);
+}
+
+/* Konten utama */
+main {
+  flex-grow: 1;
+  background: white;
+  max-width: 900px;
+  width: 100%;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 2rem;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #1a237e;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #0d47a1;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+
+/* Galeri Kegiatan */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center; /* supaya gambar rata tengah */
+}
+
+
+.gallery-grid img {
+  width: 180px;      /* lebar tetap 180px */
+  height: auto;      /* tinggi otomatis sesuai proporsi */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  object-fit: contain; /* agar tidak terpotong */
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0d47a1;
+}
+
+
+/* Footer */
+footer {
+  background-color: #1565c0;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 5px rgba(21, 101, 192, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    margin: 1rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+  nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

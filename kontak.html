@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontak - Pasca Panen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Penanganan Pasca Panen Sayuran Segar</h1>
+    <p>Pasar Panorama, Kota Bengkulu</p>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kerusakan.html">Jenis Kerusakan</a>
+      <a href="penanganan.html">Penanganan Produk</a>
+      <a href="galeri.html">Galeri Kegiatan</a>
+      <a href="kontak.html" class="active">Kontak</a>
+    </nav>
+  </header>
+
+  <main class="contact-section">
+    <h2>Hubungi Kami</h2>
+    <p>Silakan isi form di bawah untuk pertanyaan, saran, atau kerja sama terkait penanganan pasca panen.</p>
+
+    <form class="contact-form" onsubmit="return submitForm()">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="pesan">Pesan:</label>
+      <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kelompok 1 - Universitas Bengkulu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
